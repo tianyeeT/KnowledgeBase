@@ -1,5 +1,5 @@
 ---
-title: Site nasıl bildirilir
+title: How to report websites and apps
 sidebar_position: 3
 ---
 

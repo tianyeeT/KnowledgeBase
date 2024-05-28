@@ -2104,24 +2104,24 @@ Pravidla s modifikátorem `$replace` podporuje AdGuard pro Windows, Mac, Android
 
 #### **`urltransform`** {#urltransform-modifier}
 
-The `$urltransform` rules allow you to modify the request URL by replacing the text matched by the regular expression.
+Pravidla `$urltransform` vám umožňují upravit URL požadavku nahrazením textu, který odpovídá regulárnímu výrazu.
 
 **Funkce**
 
-- `$urltransform` rules apply to any request URL text.
-- `$urltransform` rules can also **modify the query part** of the URL.
-- `$urltransform` will not be applied if the original URL is blocked by other rules.
-- `$urltransform` will be applied before `$removeparam` rules.
+- `$urltransform` pravidla platí pro jakýkoli text URL požadavku.
+- `$urltransform` pravidla mohou také **upravit část dotazu** URL.
+- `$urltransform` nebude použito, pokud je původní URL blokována jinými pravidly.
+- `$urltransform` se použije před pravidly `$removeparam`.
 
-The `$urltransform` value can be empty for exception rules.
+Hodnota `$urltransform` může být pro pravidla výjimek prázdná.
 
 **Vícenásobná pravidla odpovídajících jednomu požadavku**
 
-If multiple `$urltransform` rules match a single request, we will apply each of them. **Pořadí je stanoveno abecedně.**
+Pokud jednomu požadavku odpovídá více pravidel `$urltransform`, použijeme každé z nich. **Pořadí je stanoveno abecedně.**
 
 **Syntaxe**
 
-`$urltransform` syntax is similar to replacement with regular expressions [in Perl](http://perldoc.perl.org/perlrequick.html#Search-and-replace).
+`$urltransform` syntaxe je podobná nahrazování regulárními výrazy [v Perl](http://perldoc.perl.org/perlrequick.html#Search-and-replace).
 
 ```text
 urltransform = "/" regexp "/" replacement "/" modifiers
@@ -2131,7 +2131,7 @@ urltransform = "/" regexp "/" replacement "/" modifiers
 - **`replacement`** — řetězec, který bude použit k nahrazení řetězce odpovídajícího `regexp`.
 - **`modifiers`** — příznaky regulárního výrazu. Například `i` — necitlivé vyhledávání nebo `s` — jednořádkový režim.
 
-In the `$urltransform` value, two characters must be escaped: the comma `,` and the dollar sign `$`. Use the backslash character `\` for this. Např. uvozená čárka vypadá takto: `\,`.
+V hodnotě `$urltransform` musí být dva znaky uvozeny: čárka `,` a znak dolaru `$`. K tomu použijte znak zpětného lomítka `\`. Např. uvozená čárka vypadá takto: `\,`.
 
 **Příklady**
 
@@ -2142,10 +2142,10 @@ In the `$urltransform` value, two characters must be escaped: the comma `,` and 
 Toto pravidlo má tři části:
 
 - `regexp` — `(pref\/).*\/(suf)`;
-- `replacement` — `\$1\$2` where `$` is escaped;
+- `replacement` — `\$1\$2` kde `$` je uvozeno;
 - `modifikátory` — `i` pro necitlivé vyhledávání.
 
-**Multiple `$urltransform` rules**
+**Vícenásobná pravidla `$urltransform`**
 
 1. `||example.org^$urltransform=/X/Y/`
 2. `||example.org^$urltransform=/Z/Y/`
@@ -2154,7 +2154,7 @@ Toto pravidlo má tři části:
 - Jak pravidlo 1, tak pravidlo 2 se použijí na všechny požadavky odeslané na `example.org`.
 - Pravidlo 2 je zakázáno pro požadavky odpovídající na `||example.org/page/`, **ale pravidlo 1 stále funguje!**
 
-**Re-matching rules after transforming the URL**
+**Opětovná shoda pravidel po transformaci URL**
 
 If the `$urltransform` rule is applied to a request, all the rules will be re-evaluated against the new URL.
 

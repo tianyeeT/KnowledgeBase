@@ -20,11 +20,11 @@ Some userscripts are pre-installed, others can be installed manually.
 This userscript allows you to manage AdGuard protection directly from your browser. While the [new Assistant](/adguard-for-mac/features/browser-assistant) is a browser extension that can be installed from your browser’s store, the legacy Assistant is a userscript that doesn’t require additional installation. Some features are common to both assistants:
 
 - Enable or disable protection for a specific website
-- Pause protection for 30 seconds
-- Manually block an ad
-- Report incorrect blocking
+- Pausar la protección durante 30 segundos
+- Bloquear un anuncio manualmente
+- Informar de bloqueo incorrecto
 
-However, the new Assistant is more advanced. It also allows you to manage AdGuard protection for all websites, check the website’s certificate, manage HTTPS filtering, and open the filtering log or the app’s settings. We recommend that you use the legacy Assistant only if the new Assistant is not available.
+However, the new Assistant is more advanced. It also allows you to manage AdGuard protection for all websites, check the website’s certificate, manage HTTPS filtering, and open the filtering log or the app’s settings. Te recomendamos que utilices el Asistente anterior sólo si el nuevo Asistente no está disponible.
 
 ## AdGuard Extra
 

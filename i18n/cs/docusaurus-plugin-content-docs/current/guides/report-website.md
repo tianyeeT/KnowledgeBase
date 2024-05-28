@@ -1,5 +1,5 @@
 ---
-title: Jak nahlásit webovou stránku
+title: How to report websites and apps
 sidebar_position: 3
 ---
 

@@ -15,7 +15,7 @@ sidebar_position: 1
 
 ![ファイアウォール \*mobile\_border](https://cdn.adtidy.org/blog/new/i5y7stempFileForShare_20230614-170512.png)
 
-#### グローバルファイアウォールルール
+### グローバルファイアウォールルール
 
 このセクションでは、デバイス全体のインターネットアクセスを制御できます。
 
@@ -23,7 +23,7 @@ sidebar_position: 1
 
 これらのルールは、デバイス上のすべてのアプリに適用されます（※特定のアプリなどに対してカスタムファイアウォールルールが設定されている場合は、そのアプリに対してはカスタムルールが優先されます）。
 
-#### カスタムファイアウォールルール
+### カスタムファイアウォールルール
 
 このセクションでは、アプリごとのインターネットアクセスを制御することができます。カスタムファイアウォールルールを使って、信頼できないと思われるアプリやデータ通信量を抑えたいアプリのアクセス権限を制限したり、グローバルファイアウォールルールの対象からアプリを除外したりすることができます。
 
@@ -42,3 +42,11 @@ sidebar_position: 1
 4. アプリに対して、特定の種類の通信をブロックする必要がある場合は、スイッチを左に切り替えてください（スイッチが赤色の状態）。 その通信を許可したい場合は、スイッチを有効（緑色）のままにしてください。 **※カスタムファイアウォールルールはグローバルファイアウォールルールよりも優先されます**。グローバルファイアウォールルールを変更したりしても、カスタムルールのあるアプリには影響しません。
 
 カスタムファイアウォールルールからルールやアプリを削除するには、ルールやアプリを左にスワイプしてください。
+
+### Notifications
+
+If enabled, this feature notifies you when an app tries to break one of the Firewall rules set for that app (for example, to access mobile data when it shouldn’t). You can turn notifications on and off for all apps or for each app separately.
+
+Tap the notification to access the app’s Firewall settings, or temporary disable all Firewall rules for that app by tapping the corresponding button in the notification. You can also mute all Firewall notifications for the app by tapping the _Mute_ button in the notification for that app.
+
+Note that if notifications for multiple apps would be displayed, they will be bundled into a single notification instead.

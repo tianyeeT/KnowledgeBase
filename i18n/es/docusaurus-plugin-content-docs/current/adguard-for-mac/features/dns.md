@@ -5,24 +5,24 @@ sidebar_position: 4
 
 :::info
 
-This article is about AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Este artículo trata sobre AdGuard para Mac, un bloqueador de anuncios multifuncional que protege tu dispositivo a nivel del sistema. Para ver cómo funciona, [descarga la app AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-## DNS protection
+## Protección DNS
 
-The _DNS_ section contains one feature, _DNS protection_, with multiple settings:
+La sección _DNS_ contiene una función, _Protección DNS_, con múltiples ajustes:
 
-- Providers
+- Proveedores
 - Filtros
-- Blocklist
+- Lista de bloqueo
 - Lista de permitido
 
 ![DNS](https://cdn.adtidy.org/content/kb/ad_blocker/mac/dns.png)
 
-If you enable _DNS protection_, DNS traffic will be managed by AdGuard.
+Si activas la _Protección DNS_, el tráfico DNS será gestionado por AdGuard.
 
-### Providers
+### Proveedores
 
 Under _Providers_, you can select a DNS server to encrypt your DNS traffic and block ads and trackers if necessary. We recommend AdGuard DNS. For more advanced configuration, you can [set up a private AdGuard DNS server](https://adguard-dns.io/welcome.html) or add a custom one by clicking the `+` icon in the lower left corner.
 
@@ -30,7 +30,7 @@ Under _Providers_, you can select a DNS server to encrypt your DNS traffic and b
 
 DNS filters apply ad-blocking rules at the DNS level. Such filtering is less precise than regular ad blocking, but it’s particularly useful for blocking an entire domain. To add a DNS filter, click `+`. You can find more DNS filters at [filterlists.com](https://filterlists.com/).
 
-### Blocklist
+### Lista de bloqueo
 
 Domains from this list will be blocked. To add a domain, click `+`. You can add domain names or DNS filtering rules using a [special syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/).
 
